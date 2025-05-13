@@ -5,7 +5,7 @@ import java.io.PrintStream;
 /**
  * @author yihua.huang@dianping.com
  */
-public class HelloWorldObserver implements Observer{
+public class HelloWorldObserver implements Observer {
 
     private PrintStream printer = System.out;
 

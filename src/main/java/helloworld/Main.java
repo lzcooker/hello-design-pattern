@@ -46,7 +46,7 @@ public class Main {
         System.out.println("We are creational patterns!");
 
         System.out.println("1. Abstract Factory: ");
-
+        //抽象工厂， 多个对象批量生成， 由实现类决定
         SplitHelloWorldFactory abstractFactory = AbstractFactory.select(AbstractFactory.Type.DesignPattern);
         HelloWorld abstractFactoryHelloWorld = new SplitHelloWorld(abstractFactory.createHelloWorldInterjection(),
                 abstractFactory.createHelloWorldObject());
@@ -118,9 +118,9 @@ public class Main {
         Command helloWorldCommand = new HelloWorldPrintCommand();
         helloWorldCommand.execute();
 
-        System.out.println("15. Interpreter: ");
+        System.out.println("15. InterpreterDemo: ");
         HelloWorldInterpreter helloWorldInterpreter = new HelloWorldInterpreter();
-        helloWorldInterpreter.interpret("println('Hello Interpreter!')");
+        helloWorldInterpreter.interpret("println('Hello InterpreterDemo!')");
 
         System.out.println("16. Iterator: ");
         HelloWorldCharacterIterator helloWorldCharacterIterator = new HelloWorldCharacterIterator("Hello Iterator!".toCharArray());

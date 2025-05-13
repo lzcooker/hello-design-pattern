@@ -20,6 +20,7 @@ public class HelloWorldSingleton implements HelloWorld {
 
     }
 
+    //静态内部类
     static class HelloWorldSingletonHolder {
         private static final HelloWorldSingleton INSTANCE = new HelloWorldSingleton();
     }
